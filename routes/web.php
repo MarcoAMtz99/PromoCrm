@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Livewire\Paciente\Index;
+use App\Http\Livewire\Paciente\Show;
 use App\Http\Livewire\Paciente\Create;
 /*
 |--------------------------------------------------------------------------
@@ -24,3 +25,4 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 
 Route::get('/pacientes',Index::class)->name('pacientes');
 Route::get('/pacientes/create',Create::class)->name('pacientes.create');
+Route::get('/pacientes/show',Show::class)->name('pacientes.show');
